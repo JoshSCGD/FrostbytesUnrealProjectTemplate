@@ -9,9 +9,11 @@
 /**
  * 
  */
-UCLASS(Blueprintable)
+UCLASS(Abstract, Blueprintable)
 class BASEPROJECTTEMPLATE_API ABaseWorldSettings : public AWorldSettings
 {
 	GENERATED_BODY()
 	
 };
+
+
