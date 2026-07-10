@@ -41,6 +41,11 @@
 *.VC.db
 *.VC.opendb
 .vsconfig
+.vs/
+.idea/
+*.user
+*.userosscache
+*.suo
 
 # Precompiled Assets
 SourceArt/**/*.png
