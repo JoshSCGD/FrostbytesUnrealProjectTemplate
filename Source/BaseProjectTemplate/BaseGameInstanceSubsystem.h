@@ -13,5 +13,15 @@ UCLASS(Abstract, Blueprintable)
 class BASEPROJECTTEMPLATE_API UBaseGameInstanceSubsystem : public UGameInstanceSubsystem
 {
 	GENERATED_BODY()
-	
+
+public:
+
+	UFUNCTION(BlueprintImplementableEvent)
+	void OnSubsystemInitialized();
+
+	UFUNCTION(BlueprintImplementableEvent)
+	void OnSubsystemDeinitialized();
+
+	virtual void Initialize(FSubsystemCollectionBase& Collection) override;
+	virtual void Deinitialize() override;
 };
