@@ -11,7 +11,9 @@ class BASEPROJECTTEMPLATE_API UGameSettingCollection : public UGameSetting
 
 public:
 
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Default)
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category="Default", meta=(DisplayAfter="Name"))
 	TArray<TSubclassOf<UGameSettingValue>> Options;
+	
+	
 	TSubclassOf<UGameSetting> GetVisualLookupClass_Implementation() const;
 };
