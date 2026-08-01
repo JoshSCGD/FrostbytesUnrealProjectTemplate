@@ -22,5 +22,8 @@ public:
 	// Used for your visual widget lookup map.
 	UFUNCTION(BlueprintNativeEvent, BlueprintCallable, BlueprintPure)
 	TSubclassOf<UGameSetting> GetVisualLookupClass() const;
+	
+	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
+	void InitializeSetting();
 };
 

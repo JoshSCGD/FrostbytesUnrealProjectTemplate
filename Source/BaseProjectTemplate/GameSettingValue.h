@@ -9,6 +9,6 @@ class BASEPROJECTTEMPLATE_API UGameSettingValue : public UGameSetting
 	
 public:
 
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Default)
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Default, meta = (MultiLine = true))
 	FText Description;
 };

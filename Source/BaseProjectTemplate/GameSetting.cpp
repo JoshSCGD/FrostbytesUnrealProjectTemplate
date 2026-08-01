@@ -7,3 +7,8 @@ TSubclassOf<UGameSetting> UGameSetting::GetVisualLookupClass_Implementation() co
 {
 	return StaticClass();
 }
+
+
+void UGameSetting::InitializeSetting_Implementation()
+{
+}
