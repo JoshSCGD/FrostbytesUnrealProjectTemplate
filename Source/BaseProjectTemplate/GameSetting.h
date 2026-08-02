@@ -16,7 +16,7 @@ class BASEPROJECTTEMPLATE_API UGameSetting : public UObject
 	
 public:
 
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Default)
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Default, meta = (DisplayPriority = -1))
 	FText Name;
 	
 	// Used for your visual widget lookup map.
